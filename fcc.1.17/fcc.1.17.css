@@ -1,0 +1,10 @@
+
+
+@media only screen and (max-width: 100px) {
+.image {
+  margin: auto;
+  }
+}
+heder{
+  display: flex;
+}
