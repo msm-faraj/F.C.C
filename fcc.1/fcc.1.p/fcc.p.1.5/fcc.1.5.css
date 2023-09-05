@@ -1,0 +1,18 @@
+form{
+    border-radius: 2%;
+    font-family: ;
+    background: linear-gradient(
+        180deg,
+        black,
+        rgb(170, 170, 170)
+    );
+    color:rgb(170, 170, 170);
+    font-weight: bold;
+    margin: auto;
+    padding: 20px;
+    height:700px;
+    width: 400px;
+}
+input{
+    padding-top: 40px;
+}
