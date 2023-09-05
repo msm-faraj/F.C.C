@@ -1,37 +1,77 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-<h1 id="title">msm</h1>
-<p id="description">This is made by by mam-faraj</p>
-<link href="./fcc.1.5.css" rel="stylesheet"./>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="fcc.1.5.css" rel="stylesheet" />
   </head>
   <body>
-
-    
-    <form id="survey-form">
-      <label id="name-label">This is your fucking name</label>
-      <input required id="name" type="text" placeholder="name"/>
-
-      <label id="email-label">This is your stupid email</label>
-      <input required id="email" type="email" placeholder="email"/>
-
-      <label id="number-label">Please put a shit(number) hear</label>
-      <input id="number" type="number" min="10" max="20" placeholder="number"/>
-      
-      <select id="dropdown">
-        <option>One</option>
-        <option>Two</option>
-      </select>
-
-      <input value="radio-one" name="radio-one" type="radio">first radio</input>
-      <input value="radio-one" name="radio-one" type="radio">second radio</input>
-      <input value="radio-1" name="radio-1" type="radio">first radio</input>
-      <input value="radio-1" name="radio-1" type="radio">second radio</input>
-
-      <input value="first-checkbox" id="survey-form" type="checkbox">checkbox</input>
-      <input value="second-checkbox"id="survey-form" type="checkbox">checkbox</input>
-      <textarea type="survey-form"></textarea>
-      <input type="submit" id="submit"></input>
-    </form>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2020</p>
+        <hr />
+        <section>
+          <h2>Coffee</h2>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg"
+            alt="coffee icon"
+          />
+          <article class="item">
+            <p class="flavor">French Vanilla</p>
+            <p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p>
+            <p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p>
+            <p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p>
+            <p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p>
+            <p class="price">4.50</p>
+          </article>
+        </section>
+        <section>
+          <h2>Desserts</h2>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg"
+            alt="pie icon"
+          />
+          <article class="item">
+            <p class="dessert">Donut</p>
+            <p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cherry Pie</p>
+            <p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheesecake</p>
+            <p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p>
+            <p class="price">2.50</p>
+          </article>
+        </section>
+      </main>
+      <hr class="bottom-line" />
+      <footer>
+        <p>
+          <a href="https://www.freecodecamp.org" target="_blank"
+            >Visit our website</a
+          >
+        </p>
+        <p class="address">123 Free Code Camp Drive</p>
+      </footer>
+    </div>
   </body>
 </html>
