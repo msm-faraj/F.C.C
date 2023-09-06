@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="msm-faraj" />
+    <meta name="description" content="This page is a survey form for fcc.1.5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>msm-faraj fcc.1.5 survy form</title>
+    <link rel="icon" href="./html-5.png" />
+    <link rel="stylesheet" href="fcc.1.5.css" />
+  </head>
+
+  <body>
+    <h1 id="title">fcc.1.5 survey form</h1>
+    <p id="description">This form was made by by mam-faraj in 2223/09/06</p>
+    <div class="form">
+      <form id="survey-form">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="name"
+            >Your name
+            <input id="name" required id="name" type="text" placeholder="name"
+          /></label>
+
+          <label for="email"
+            >Your email
+            <input
+              id="email"
+              required
+              id="email"
+              type="email"
+              placeholder="email"
+          /></label>
+
+          <label for="number"
+            >Your number
+            <input
+              id="number"
+              type="number"
+              min="10"
+              max="20"
+              placeholder="number"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Selector</legend>
+          <label for="dropdown"
+            >This is a select element of html
+            <select id="dropdown">
+              <option>One</option>
+              <option>Two</option>
+              <option>Three</option>
+              <option>Four</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Other Information</legend>
+
+          <label for="radio-a1"
+            >This is radio-a1
+            <input id="radio-a1" value="radio-a1" name="radio-a" type="radio"
+          /></label>
+          <label for="radio-a2"
+            >This is radio-a2
+            <input id="radio-a2" value="radio-a2" name="radio-a" type="radio"
+          /></label>
+          <label for="radio-b1"
+            >This is radio-b1
+            <input id="radio-b1" value="radio-b1" name="radio-b" type="radio"
+          /></label>
+          <label for="radio-b2"
+            >This is radio-b2
+            <input id="radio-b2" value="radio-b2" name="radio-b" type="radio"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Checkbox</legend>
+          <label for="checkbox-a"
+            >This is checkbox-a
+            <input
+              id="checkbox-a"
+              name="checkbox"
+              value="first-checkbox"
+              id="first-checkbox"
+              type="checkbox"
+          /></label>
+          <label for="checkbox-b"
+            >This is checkbox-b<input
+              id="checkbox-b"
+              name="checkbox"
+              value="second-checkbox"
+              id="second-checkbox"
+              type="checkbox"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Textarea and Buttons</legend>
+          <label for="idea">
+            <textarea
+              id="idea"
+              name="idea"
+              rows="5"
+              cols="40"
+              placeholder="put your idea here (nobody cares)"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input class="submit-button" type="submit" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>

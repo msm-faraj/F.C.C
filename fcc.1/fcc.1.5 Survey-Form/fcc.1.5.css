@@ -1,0 +1,84 @@
+:root{
+  --myheader: orangered;
+  --mytext: lightgray;
+  --mybackground: #222;
+  --mygray: rgb(92, 91, 91);
+}
+
+html{
+font-size: 24px;
+}
+h1{
+  color: var(--myheader);
+  text-align: center;
+}
+p{
+  color: var(--myheader);
+  text-align: center;
+}
+body {
+  padding: 30px;
+  background-size: cover;
+  background-color: var(--mybackground);
+  color: var(--mytext);
+}
+legend{
+  color: var(--myheader);
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.form{
+  background:linear-gradient(
+    130deg,
+    var(--mybackground) 0%,
+    var(--mybackground) 25%,
+    var(--mygray) 55%,
+    var(--mybackground) 75%,
+    var(--mybackground) 100%
+  );
+  width: 55%;
+  margin: auto;
+  padding: 5%;
+  border-radius: 2%;
+}
+label{
+  color: var(--mytext);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 15px;
+}
+textarea, input, select{
+  padding: 3px;
+  border: 1px solid gray;
+  background: linear-gradient(
+    130deg,
+    var(--mybackground)0,
+    gray 55%,
+    gray 80%,
+    white
+  );
+  border-radius: 1%;
+  font-family: Impact, sans-serif;
+  font-weight: bold;
+}
+::placeholder, select{
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+fieldset{
+  border-radius: 2%;
+  padding: 3%;
+}
+.submit-button{
+  color: var(--mybackground);
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: var(--mygray);
+  min-width: 300px;
+  border-radius: 3%;
+}
