@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <meta
+      name="description"
+      content="freeCodeCamp Accessibility Quiz practice project"
+    />
     <title>Accessibility Quiz</title>
     <link rel="stylesheet" href="fcc.1.9.css" />
   </head>
+
   <body>
     <header>
-      <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+      <img
+        id="logo"
+        src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+      />
       <h1>HTML/CSS Quiz</h1>
       <nav>
         <ul>
@@ -19,8 +26,12 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+      <form
+        method="post"
+        action="https://freecodecamp.org/practice-project/accessibility-quiz"
+      >
         <section role="region" aria-labelledby="student-info">
           <h2 id="student-info">Student Info</h2>
           <div class="info">
@@ -32,14 +43,18 @@
             <input type="email" name="student-email" id="student-email" />
           </div>
           <div class="info">
-            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+            <label for="birth-date"
+              >D.O.B.<span class="sr-only">(Date of Birth)</span></label
+            >
             <input type="date" name="birth-date" id="birth-date" />
           </div>
         </section>
+
         <section role="region" aria-labelledby="html-questions">
           <h2 id="html-questions">HTML</h2>
           <div class="question-block">
             <p>1</p>
+
             <fieldset class="question" name="html-question-one">
               <legend>
                 The legend element represents a caption for the content of its
@@ -61,6 +76,7 @@
               </ul>
             </fieldset>
           </div>
+
           <div class="question-block">
             <p>2</p>
             <fieldset class="question" name="html-question-two">
@@ -85,6 +101,7 @@
             </fieldset>
           </div>
         </section>
+
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS</h2>
           <div class="formrow">
@@ -102,10 +119,17 @@
               <label for="css-questions">Do you have any questions:</label>
             </div>
             <div class="answer">
-              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+              <textarea
+                id="css-questions"
+                name="css-questions"
+                rows="5"
+                cols="24"
+                placeholder="Who is flexbox..."
+              ></textarea>
             </div>
           </div>
         </section>
+
         <button type="submit">Send</button>
       </form>
     </main>
@@ -119,4 +143,3 @@
     </footer>
   </body>
 </html>
-

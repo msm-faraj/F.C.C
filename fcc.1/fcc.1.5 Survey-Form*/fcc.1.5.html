@@ -1,113 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="author" content="msm-faraj" />
     <meta name="description" content="This page is a survey form for fcc.1.5" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>msm-faraj fcc.1.5 survy form</title>
-    <link rel="icon" href="./html-5.png" />
-    <link rel="stylesheet" href="fcc.1.5.css" />
+    <link rel="icon" href="../a.svg" />
+    <link rel="stylesheet" href="fcc.1.9.css" />
   </head>
 
   <body>
-    <h1 id="title">fcc.1.5 survey form</h1>
-    <p id="description">This form was made by by mam-faraj in 2223/09/06</p>
-    <div class="form">
-      <form id="survey-form">
-        <fieldset>
-          <legend>Your Information</legend>
-          <label id="name-label" for="name"
-            >Your name
-            <input id="name" required id="name" type="text" placeholder="name"
-          /></label>
-
-          <label id="email-label" for="email"
-            >Your email
-            <input
-              id="email"
-              required
-              id="email"
-              type="email"
-              placeholder="email"
-          /></label>
-
-          <label id="number-label" for="number"
-            >Your number
-            <input
-              id="number"
-              type="number"
-              min="10"
-              max="20"
-              placeholder="number"
-          /></label>
-        </fieldset>
-        <fieldset>
-          <legend>Selector</legend>
-          <label for="dropdown"
-            >This is a select element of html
-            <select id="dropdown">
-              <option>One</option>
-              <option>Two</option>
-              <option>Three</option>
-              <option>Four</option>
-            </select>
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Other Information</legend>
-
-          <label for="radio-a1"
-            >This is radio-a1
-            <input id="radio-a1" value="radio-a1" name="radio-a" type="radio"
-          /></label>
-          <label for="radio-a2"
-            >This is radio-a2
-            <input id="radio-a2" value="radio-a2" name="radio-a" type="radio"
-          /></label>
-          <label for="radio-b1"
-            >This is radio-b1
-            <input id="radio-b1" value="radio-b1" name="radio-b" type="radio"
-          /></label>
-          <label for="radio-b2"
-            >This is radio-b2
-            <input id="radio-b2" value="radio-b2" name="radio-b" type="radio"
-          /></label>
-        </fieldset>
-        <fieldset>
-          <legend>Checkbox</legend>
-          <label for="checkbox-a"
-            >This is checkbox-a
-            <input
-              id="checkbox-a"
-              name="checkbox"
-              value="first-checkbox"
-              id="first-checkbox"
-              type="checkbox"
-          /></label>
-          <label for="checkbox-b"
-            >This is checkbox-b<input
-              id="checkbox-b"
-              name="checkbox"
-              value="second-checkbox"
-              id="second-checkbox"
-              type="checkbox"
-          /></label>
-        </fieldset>
-        <fieldset>
-          <legend>Textarea and Buttons</legend>
-          <label for="idea">
+    <header>
+      <img width="100" id="logo" src="../a.svg" alt="msm-fraj-logo" />
+      <h1 id="title">FCC.1.5 Survey Form</h1>
+      <nav>
+        <ul>
+          <li><a href="#sect-1">Sect-1</a></li>
+          <li><a href="#sect-2">Sect-2</a></li>
+          <li><a href="#sect-3">Sect-3</a></li>
+          <li><a href="#sect-4">Sect-4</a></li>
+          <li><a href="#sect-5">Sect-5</a></li>
+          <li><a href="#button">SUBMIT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 id="sect-1">Sect-1-(Forms)</h2>
+        <form action="">
+          <fieldset>
+            <legend>This is About Form Input Types</legend>
+            <h3>An Ordered List Of Form Input Type</h3>
+            <ol>
+              <li>
+                <label for="button-input-type">button-input-type</label>
+                <input type="button" value="BUTTON" />
+                <hr />
+              </li>
+              <li>
+                <label for="checkbox-input-type">checkbox-input-type</label>
+                <input type="checkbox" />
+                <hr />
+              </li>
+              <li>
+                <label for="color-input-type">color-input-type</label>
+                <input type="color" />
+                <hr />
+              </li>
+              <li>
+                <label for="date-input-type">date-input-type</label>
+                <input type="date" />
+                <hr />
+              </li>
+              <li>
+                <label for="email-input-type">email-input-type</label>
+                <input type="email" />
+                <hr />
+              </li>
+              <li>
+                <label for="file-input-type">file-input-type</label>
+                <input type="file" />
+                <hr />
+              </li>
+              <li>
+                <label for="hidden-input-type">hidden-input-type</label>
+                <input type="hidden" />
+                <hr />
+              </li>
+              <li>
+                <label for="image-input-type">image-input-type</label>
+                <input type="image" />
+                <hr />
+              </li>
+              <li>
+                <label for="month-input-type">month-input-type</label>
+                <input type="month" />
+                <hr />
+              </li>
+              <li>
+                <label for="password-input-type">password-input-type</label>
+                <input type="password" />
+                <hr />
+              </li>
+              <li>
+                <label for="radio-input-type">radio-input-type</label>
+                <input type="radio" />
+                <hr />
+              </li>
+              <li>
+                <label for="range-input-type">range-input-type</label>
+                <input type="range" />
+                <hr />
+              </li>
+              <li>
+                <label for="rest-input-type">rest-input-type</label>
+                <input type="rest" />
+                <hr />
+              </li>
+              <li>
+                <label for="search-input-type">search-input-type</label>
+                <input type="search" />
+                <hr />
+              </li>
+              <li>
+                <label for="submit-input-type">submit-input-type</label>
+                <input type="submit" />
+                <hr />
+              </li>
+              <li>
+                <label for="tel-input-type">tel-input-type</label>
+                <input type="tel" />
+                <hr />
+              </li>
+              <li>
+                <label for="text-input-type">text-input-type</label>
+                <input type="text" />
+                <hr />
+              </li>
+              <li>
+                <label for="time-input-type">time-input-type</label>
+                <input type="time" />
+                <hr />
+              </li>
+              <li>
+                <label for="url-input-type">url-input-type</label>
+                <input type="url" />
+                <hr />
+              </li>
+              <li>
+                <label for="week-input-type">week-input-type</label>
+                <input type="week" />
+                <hr />
+              </li>
+            </ol>
+            <button id="button" type="submit">SUBMIT</button>
+          </fieldset>
+          <fieldset>
+            <legend>This is Another Fieldset</legend>
+            <h3>This is Another h3 Element</h3>
             <textarea
-              id="idea"
-              name="idea"
-              rows="5"
-              cols="40"
-              placeholder="put your idea here (nobody cares)"
+              name="text-area"
+              id="text-area-1"
+              cols="30"
+              rows="10"
             ></textarea>
-          </label>
-        </fieldset>
-        <input class="submit-button" type="submit" id="submit" />
-      </form>
-    </div>
+          </fieldset>
+        </form>
+      </section>
+      <section>
+        <h2 id="sect-2">Sect-2</h2>
+        <div class="sect-2-class"></div>
+      </section>
+      <section>
+        <h2 id="sect-3">Sect-3</h2>
+        <div class="sect-3-class"></div>
+      </section>
+      <section>
+        <h2 id="sect-4">Sect-4</h2>
+        <div class="sect-4-class"></div>
+      </section>
+      <section>
+        <h2 id="sect-5">Sect-5</h2>
+        <div class="sect-5-class"></div>
+      </section>
+    </main>
+    <footer>
+      <address></address>
+    </footer>
   </body>
 </html>
