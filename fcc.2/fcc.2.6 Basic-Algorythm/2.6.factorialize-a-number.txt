@@ -1,0 +1,15 @@
+function factorialize(num) {
+  if (num === 0){
+    return 1;
+  }
+  else{
+let fact = 1;
+for (let i = num; i > 1; i--){
+  fact *= i;
+  console.log(fact);
+}
+return fact;
+}
+}
+
+factorialize(5);

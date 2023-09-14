@@ -43,6 +43,7 @@ h1 {
 }
 main > h1 {
   color: var(--medium);
+  display: flex;
 }
 
 h3 {
@@ -54,13 +55,17 @@ h3 {
   text-align: center;
   margin-top: 20px;
 }
+.second-title {
+  margin: 10px;
+}
 
 .fig-container {
   z-index: 0;
   margin-top: -45px;
+  /* margin-bottom: 100px; */
   /* border: 1px solid red; */
   width: 90%;
-  height: 380px;
+  height: 700px;
   /* background-color: var(--sky); */
   display: grid;
   place-items: center;
@@ -72,7 +77,6 @@ img {
   border-radius: 5px;
   width: 100%;
   max-width: 100%;
-  display: block;
   height: auto;
 }
 .timeline {
