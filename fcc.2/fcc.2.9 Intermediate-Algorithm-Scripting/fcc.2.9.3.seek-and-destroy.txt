@@ -1,0 +1,14 @@
+function destroyer(arr) {
+  let all = Object.values(arguments) [0];
+  let targets = Object.values(arguments).splice(1);
+  let remains = [];
+  for (let i = 0; i < all.length; i++){
+    if(targets.indexOf(all[i]) === -1){
+      remains.push(all[i])
+    }
+  }
+console.log(remains);
+  return remains;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
