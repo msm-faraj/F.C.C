@@ -1,0 +1,27 @@
+function sumPrimes(num) {
+
+let counter = 2;
+let sum = 0;
+
+while (counter <= num) {
+  if(isPrime(counter)) {
+    sum += counter;
+    console.log(sum);
+  }
+  counter += 1;
+}
+return sum;
+}
+
+function isPrime(number) {
+  let counter = 2;
+  while (counter < number) {
+    if (number % counter === 0) {
+      return false;
+    }
+    counter += 1;
+  }
+  return true;
+}
+console.log(isPrime(5));
+console.log(sumPrimes(10));
