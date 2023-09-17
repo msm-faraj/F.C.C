@@ -1,0 +1,17 @@
+function translatePigLatin(str) {
+  let vowel = ["a", "e", "i", "o", "u"];
+  for (let i = 0; i < str.length; i++){
+    let letter = str[i];
+    if (vowel.indexOf(letter) !== -1 && i === 0){
+      console.log("first letter is vowel");
+      return str + "way";
+    }
+    if (vowel.indexOf(letter) !== -1 ) {
+      console.log("first letter is not vowel");
+      return str.slice(i) + str.slice(0, i) + "ay";
+    }
+  }
+  return str + "ay";
+}
+
+console.log(translatePigLatin("cina"));

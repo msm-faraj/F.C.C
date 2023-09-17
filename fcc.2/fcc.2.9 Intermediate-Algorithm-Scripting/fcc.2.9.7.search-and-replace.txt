@@ -1,0 +1,20 @@
+function myReplace(str, before, after) {
+  let strArr = str.split(" ");
+
+  for (let i = 0; i < strArr.length; i++){
+    let isFinded = strArr[i] === before;
+    if (isFinded){
+      if(strArr[i][0] === strArr[i][0].toUpperCase()){
+        after = after[0].toUpperCase() + after.slice(1);
+      }
+      if(strArr[i][0] === strArr[i][0].toLowerCase()){
+        after = after[0].toLowerCase() + after.slice(1);
+      }
+      strArr[i] = after;
+    }
+  }
+
+  return strArr.join(" ");
+}
+
+console.log(myReplace("I think we should look up there", "up", "Down"));

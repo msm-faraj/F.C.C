@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+@media only screen and (min-width: 600px) {
+  #navbar {
+    width: 28%;
+  }
+
+html{
+  font-family: monospace;
+  background-color: #fefae0;
+  color: #3c1518;
+}
+nav {
+  margin-left: 4px;
+  margin-top: 8px;
+  padding: 0;
+  position: fixed;
+  display: block;
+}
+nav header{
+  text-align: center;
+  background-color: #283618;
+  width: 100%;
+  color: #606c38;
+  font-size: 1.7em;
+}
+.nav-link{
+  cursor: pointer;
+  padding: 4px;
+  color: #283618;
+  text-align: center;
+}
+nav li{
+  display: list-item;
+  position: relative;
+  line-height: 100px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+main {
+  margin: 8px;
+  margin-left: 30%;
+  padding: 2%;
+  border: 1px solid red;
+}

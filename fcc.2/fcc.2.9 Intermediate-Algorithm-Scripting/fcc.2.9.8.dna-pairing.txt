@@ -1,0 +1,21 @@
+function pairElement(str) {
+
+function second(arr){
+  if (arr === "G"){
+    return "C";
+  }else if (arr === "C"){
+    return "G";
+  }else if (arr === "A"){
+    return "T";
+  }else if (arr === "T"){
+    return "A";
+  }
+}
+
+return str.split("").map(str => {
+  let pair = [str, second(str)];
+  return pair;
+})
+}
+
+console.log(pairElement("GCG"));
