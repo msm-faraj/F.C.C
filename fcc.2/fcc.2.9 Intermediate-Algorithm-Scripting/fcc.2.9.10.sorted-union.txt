@@ -1,0 +1,20 @@
+function uniteUnique(arr) {
+  let all = [];
+  let last = [];
+  let arg = (Object.values(arguments));
+  let argNum = Object.values(arguments).length;
+
+  for (let i = 0; i < argNum; i++){
+    console.log(arg[i]);
+    for (let j = 0; j < arg[i].length; j++){
+      if(last.indexOf(arg[i][j]) === -1){
+        last.push(arg[i][j])
+      }
+    }
+  }
+  console.log(all);
+  console.log(last);
+  return last;
+}
+
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));

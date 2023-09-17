@@ -1,0 +1,24 @@
+  function convertor(char){
+    if (char === "&"){
+      return "&amp;"
+    } else if (char === "'"){
+      return "&apos;"
+    } else if (char === '"'){
+      return "&quot;"
+    } else if (char === "<"){
+      return "&lt;"
+    } else if (char === ">"){
+      return "&gt;"
+    }
+  }
+function convertHTML(str) {
+  let blackList = ["&", "'", '"', "<", ">"];
+  for (let i = 0; i < str.length; i++){
+    if (blackList.indexOf(str[i]) !== -1){
+      str = str.slice(0,i) + convertor(str[i]) + str.slice(i +1);
+    }
+  }
+   return str;
+}
+
+console.log(convertHTML("Dolce<> &'Gabbana"));

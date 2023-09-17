@@ -1,0 +1,20 @@
+function sumFibs(num) {
+  let fib = [0, 1,];
+    let counter = fib[fib.length -2] + fib[fib.length -1];
+    // console.log(counter);
+  while (counter <= num) {
+    fib.push(counter);
+    // console.log(fib);
+    counter = fib[fib.length -2] + fib[fib.length -1];
+  }
+  let fibSumOdd = 0;
+  fib.forEach(function(num){
+    if (num % 2 != 0){
+      fibSumOdd += num;
+    }
+  });
+  // return fib;
+  return fibSumOdd;
+}
+
+console.log(sumFibs(4));

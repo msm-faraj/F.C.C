@@ -1,0 +1,17 @@
+function fearNotLetter(str) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+  let start = alphabet.indexOf(str[0]);
+  let end = alphabet.indexOf(str[str.length-1]);
+
+  // console.log(start, end);
+  for (let i = start; i < end +1; i++){
+    // console.log(i);
+    // console.log(alphabet[i], str[i - start])
+    if(alphabet[i] !== str[i - start])
+    return alphabet[i];
+  }
+  return undefined;
+}
+
+console.log(fearNotLetter("abcdefh"));
