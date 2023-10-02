@@ -1,0 +1,19 @@
+function rot13(str) {
+let result = "";
+for(let i = 0; i < str.length; i++){
+  let asciiStr = str[i].charCodeAt();
+  if (64 < asciiStr && asciiStr < 78){
+    // console.log(asciStr);
+    // console.log(str[i].charCodeAt())
+    result += String.fromCharCode(asciiStr + 13);
+  }else if (77 < asciiStr && asciiStr < 91) {
+    // console.log(i)
+    result += String.fromCharCode(asciiStr - 13);
+  } else{
+    result += str[i];
+  }
+}
+return result;
+}
+
+console.log(rot13("LMNO"));
